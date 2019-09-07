@@ -1,0 +1,120 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详情</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/detail.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'iconfont/iconfont.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/carousel.css' %}">
+    <script src="{% static 'javascript/jquery-1.12.2.min.js' %}"></script>
+    <script src="{% static 'javascript/scollTop.js' %}"></script>
+    <script src="{% static 'javascript/main.js' %}"></script>
+
+
+</head>
+<body>
+<div class="container">
+
+
+    <div class="nav">
+        <ul>
+            <li><a href="{% url 'ITEM:index' %}" target="_blank">首页</a></li>
+            <li><a href="{% url 'ITEM:release' %}" target="_blank">发布</a></li>
+            <li><a href="{% url 'USER:login' %}" target="_blank">登录</a></li>
+        </ul>
+    </div>
+    <div class="introduction">
+        {% if release_user.last_name %}
+            <img src="{{ release_user.email }}" alt="" width="130" height="130">
+        {% else %}
+            <img src="{% static 'images/01.jpg' %}" alt="" width="130" height="130">
+        {% endif %}
+        <div class="information">
+            <p class="word1">发布者</p>
+            <p class="word2">昵称:{{ release_user.first_name }}</p>
+            <p class="word3">时间:{{ create_time }}</p>
+            <p class="word4" style="margin-bottom:15px;">
+                <button type="submit">
+                    <a
+                            href="tencent://message/?Menu=yes&uin={{ qq }}&Service=58&SigT=A7F6FEA02730C988B0298D099AB708BB6FC958ABE4CFE7C519E7C185EF49A77B5695DF3F54651DD5ECB4BDD88AB85469449B214C8B0662B53A60F48C830BC3FA48E16C1158F82E0893CFD551FA90A96770546067A883D69D969E666C5B0F2AF72CD142660DCD6EEC6D735E63FA22BE078298C340606668BE&SigU=30E5D5233A443AB2BA1BCCD79E797B9CC2D2AC5FC51D8544259F7CD4DC1217D4C151BF51486899C57FE15C3E90DA267E55EC7F46791F79C05456E146A8D410F965C67DD7E8CDF457">
+                            QQ联系
+                    </a>
+                </button>
+            </p>
+            <p class="word4">
+                <button type="submit"><a href="">电话联系<span>{{ item.item_telephone }}</span></a></button>
+            </p>
+
+        </div>
+
+    </div>
+
+    <article class="wrap">
+        <div class="caroursel poster-main" data-setting='{
+                    "width":400,
+                    "height":260,
+                    "posterWidth":660,
+                    "posterHeight":400,
+                    "scale":0.8,
+                    "dealy":"3000",
+                    "algin":"middle"
+                }'>
+            <ul class="poster-list">
+                <li class="poster-item"><img src="{{ MEDIA_URL }}{{ item.picture.pic3 }}" width="100%" height="100%"></li>
+                <li class="poster-item"><img src="{{ MEDIA_URL }}{{ item.picture.pic1 }}" width="100%" height="100%"></li>
+                <li class="poster-item"><img src="{{ MEDIA_URL }}{{ item.picture.pic2 }}" width="100%" height="100%"></li>
+                <li class="poster-item"><img src="{{ MEDIA_URL }}{{ item.picture.pic3 }}" width="100%" height="100%"></li>
+                <li class="poster-item"><img src="{{ MEDIA_URL }}{{ item.picture.pic1 }}" width="100%" height="100%"></li>
+                <!-- <li class = "poster-item"><img src="images/a4.png" width = "100%" height="100%"></li>
+                <li class = "poster-item"><img src="images/a5.png" width = "100%" height="100%"></li> -->
+
+
+                <!--	<li class = "poster-item"><img src="image/a5.png" width = "100%" height="100%"></li>-->
+            </ul>
+
+            <ul class="btn-box">
+                <li class="index-btn"></li>
+                <li class="index-btn"></li>
+                <li class="index-btn"></li>
+                <li class="index-btn"></li>
+                <li class="index-btn"></li>
+
+
+                <!--<li class="index-btn"></li>-->
+            </ul>
+            <div class="poster-btn poster-prev-btn"></div>
+            <div class="poster-btn poster-next-btn"></div>
+        </div>
+    </article>
+
+
+    <div class="content">
+        <div>失物/拾物:<span>{{ item.status }}</span></div>
+        <div class="det">地区:<span>{{ item.area }}</span></div>
+        <div>类型:<span>{{ item.item_type.name }}</span></div>
+        <div>日期:<span>{{ item.time }}</span></div>
+        <div class="det">地点:<span>{{ item.location }}</span></div>
+        <div>酬金:<span>{{ item.price }}</span></div>
+        <div><span>详情:</span></div>
+    </div>
+
+    <div class="details">
+        <textarea readonly="readonly" name="" id="">{{ item.detail }}</textarea>
+    </div>
+</div>
+
+<div id="top">
+    <p><i class="iconfont">&#xe6e1;</i></p>
+    <p>顶部</p>
+</div>
+<script src="{% static 'javascript/jquery.carousel.js' %}"></script>
+<script>
+    Caroursel.init($('.caroursel'))
+</script>
+</body>
+</html>

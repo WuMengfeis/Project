@@ -1,0 +1,54 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+
+    <link rel="stylesheet" href="{% static 'iconfont/iconfont.css' %}">
+    <script src="{% static 'javascript/jquery-1.12.2.min.js' %}"></script>
+    <script src="{% static 'javascript/main.js' %}"></script>
+    {% block head %}{% endblock head%}
+</head>
+<body style="overflow-x: hidden">
+    <div class="topnav">
+        <ul>
+            <li><a href="{% url 'ITEM:release' %}" target="_blank">发布页</a></li>
+            <li><a href="{% url 'ITEM:index' %}" target="_blank">首页</a></li>
+        
+    </ul>
+</div>
+    <div class="touxiang">
+        {% if user.last_name %}
+            <img src="{{ user.email }}" alt="" width="173px" height="173px">
+        {% else %}
+            <img src="{% static 'images/01.jpg' %}" alt="" width="173px" height="173px">
+        {% endif %}
+    </div>
+    <div class="sidebar">
+        
+        <ul>
+            <li class="item1">
+                <i class="iconfont">&#xe6a3;</i><span>{{ user.first_name }}</span>
+            </li>
+            <li class="item2">
+                <a href="{% url 'USER:my_release' user.password %}"><i class="iconfont">&#xe602;
+                </i><span>我发布的</span></a>
+                    
+            <li class="item3">
+                   <a href="{% url 'USER:my_change' user.password %}"><i class="iconfont">&#xe7ea;</i><span>修改信息</span></a>
+                   
+            <li class="item4">
+                   <a href="{% url 'USER:my_contact' user.password %}"><i class="iconfont">&#xe642;</i><span>联系我们</span></a>
+                    
+        </ul>
+    </div>
+    <div class="main">
+    {% block main %}{% endblock main%}
+    </div>
+
+</body>
+</html>

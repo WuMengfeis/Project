@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form action="{% url 'search' %}" method="post">
+        <input type="text" placeholder="请输入书名或作者" name="q">
+        <input type="submit" value="搜索">
+    </form>
+    <table>
+        <thead>
+        <tr>
+            <th>序号</th>
+            <th>书名</th>
+            <th>作者</th>
+            <th>价格</th>
+            <th>编辑</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for book in books %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td><a href="{% url 'book_detail' book_id=book.id %}">{{ book.name }}</a></td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.price }}</td>
+                <td><a href="{% url 'book_edit_detail' book_id=book.id %}">修改图书</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+{% endblock %}

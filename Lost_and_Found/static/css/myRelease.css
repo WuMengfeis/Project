@@ -1,0 +1,150 @@
+body{
+    width: 1366px;
+    height: 842px;
+    background:url(../images/bg_myRelease.jpg) no-repeat center;
+}
+.topnav{
+    position: absolute;
+    top: 70px;
+    right: 170px;
+}
+
+.topnav ul li{
+    float: right;
+}
+.topnav ul li a{
+    font-size: 18px;
+    color: #5a7c97;
+    padding-left: 8px;
+}
+
+.touxiang{
+    position: absolute;
+    top: 64px;
+    left: 164px;
+}
+.touxiang img{
+    border-radius: 50%;
+}
+
+.round_icon{
+    border-radius: 50%;
+    align-items: center; 
+    justify-content: center;
+    overflow: hidden; 
+  }
+  .sidebar{
+      position: absolute;
+      top: 18rem;
+      left: 10rem;
+  }
+  .sidebar ul .item2,.item3,.item4{
+      display: block;
+      padding: 2px;
+      width: 250px;
+      height: 40px;
+      line-height: 40px;
+      background: #fff;
+      border: 1px solid #f3acae;
+      box-shadow: 0 0 3px #f3acae;
+      margin-left: -62px;
+      margin-top: 12px;
+  }
+
+  .sidebar .item1{
+      background: transparent;
+      margin-top: -30px;
+      margin-bottom: 36px;
+      margin-left: 10px;
+  }
+.sidebar ul li i{
+    font-size: 20px;
+    margin-left: 5px;
+    color: #808d9e;
+}
+
+.sidebar ul li a{
+    display: block;
+    color: #000;
+    color: #808d9e;
+}
+
+.sidebar ul li span{
+    margin-left: 5px;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+
+.main{
+    width: 900px;
+    /* height: 500px; */
+    /* background: #000; */
+    position: absolute;
+    top: 100px;
+    left: 410px;
+}
+
+.main .release{
+    color: #5a7c97;
+    font-size: 36px;
+    border-bottom: 5px solid #86c3f1;
+    margin-left: 378px;
+
+}
+.description{
+    /* widows: 800px; */
+    /* height: 60px; */
+    margin-top: 30px;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+.description ul{
+    position: absolute;
+    top: 88px;
+    left: 160px;
+}
+.description .word{
+    margin-top: 15px;
+    font-size: 18px;
+    color: #5a7c97;
+    margin-left: 50px; 
+}
+.description button{
+    margin-top: 30px;
+}
+.item{
+    height: 120px;
+}
+.pos{
+    margin-left: 350px;
+}
+.description button{
+    /* margin-left: 30px; */
+    margin-bottom: 5px;
+    width: 100px;
+    height: 40px;
+    border-width: 0px;
+    border-radius: 5px; 
+    cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+	outline: none; /* 不显示轮廓线 */
+	font-family: Microsoft YaHei; /* 设置字体 */
+    color: white; /* 字体颜色 */
+    font-size: 20px;
+
+}
+.description .button1{
+    background-color: #86c3f1;
+}
+.description .button2{
+    background-color: #f29c9f;
+}
+.description .button3{
+    background-color: #a7f1ae;
+}
+
+.description ul li span{
+    font-size: 22px;
+    margin-left: 10px;
+    color: #5a7c97;
+}

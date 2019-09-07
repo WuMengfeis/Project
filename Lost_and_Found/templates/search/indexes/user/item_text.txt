@@ -1,0 +1,3 @@
+{{ object.detail}}
+{{ object.location}}
+{{ object.item_type.name }}

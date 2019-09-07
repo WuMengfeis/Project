@@ -1,0 +1,195 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lost and Found</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'iconfont/iconfont.css' %}">
+    <link rel="stylesheet" href="{% static 'css/combo.select.css' %}">
+    <script src="{% static 'javascript/jquery-1.12.2.min.js' %}"></script>
+    <script src="{% static 'javascript/scollTop.js' %}"></script>
+    <style>
+    </style>
+
+</head>
+<body style="overflow-x: hidden">
+
+<!--[if lte IE 9]>
+        <script>
+            alert("你正在使用 过时 的浏览器，请 升级浏览器 以获得更好的体验！");
+            window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href);
+        </script>
+<![endif]-->
+
+
+<div class="container">
+
+    <div class="header">
+        <div class="search">
+            <form action="{% url 'ITEM:search' %}" method="post">
+                <input placeholder="请输入关键字" type="text" class="clearfix" name="q">
+                <button type="submit" value="" class="clearfix">
+                    <img src="{% static 'images/search.png' %}" alt="The picture is lost !">
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="sidebar .clearfix">
+        <ul>
+            {% if user.is_authenticated %}
+                <li>
+                    <div>
+                        <p><a href="{% url 'USER:my_release' user.password %}">{{ user.first_name }}</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p><a href="{% url 'USER:logout' %}">注销</a></p>
+                    </div>
+                </li>
+            {% else %}
+                <li>
+                    <div>
+                        <p><a href="{% url 'USER:login' %}">登录</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p><a href="{% url 'USER:register' %}">注册</a></p>
+                    </div>
+                </li>
+            {% endif %}
+
+            <li>
+                <div>
+                    <p class="number">{{ lost_number }}</p>
+                    <p class="note">-待寻-</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p class="number f6"><a href="{% url 'ITEM:all_found' %}">{{ found_number }}</a></p>
+                    <p class="note">-已寻-</p>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="globalbar">
+        <img class="image" src="{% static 'images/bg1.jpg' %}"
+             srcset="{% static 'images/bg3.jpg' %} 480w, {% static 'images/bg2.jpg' %} 800w, {% static 'images/bg1.jpg' %} 1600w"/>
+        <ul>
+            <li><a href="{% url 'ITEM:lost' %}">LOST</a></li>
+            <li><a href="{% url 'ITEM:release' %}">RELEASE</a></li>
+            <li><a href="{% url 'ITEM:found' %}">FOUND</a></li>
+            <li><a href="{% url 'USER:my_contact' user.password %}">CONTACT US</a></li>
+        </ul>
+
+
+    </div>
+
+
+<form action="{% url 'ITEM:index_search' %}" method="post">
+    <div class="subSearch">
+
+            <div><span>筛选</span></div>
+            <div class="notice">类型:</div>
+            <div class="sucaihuo">
+                <select name="item_type">
+                    <option value="" hidden>请选择</option>
+                    {% for item_type in item_types %}
+                        <option value="{{ item_type.name }}">{{ item_type.name }}</option>
+                    {% endfor %}
+
+                </select>
+            </div>
+            <div class="notice">失/拾:</div>
+            <div class="sucaihuo">
+                <select name="status">
+                    <option value="" hidden>请选择</option>
+                    <option value="失物"><a href="">失物</a></option>
+                    <option value="拾物"><a href="">拾物</a></option>
+                </select>
+            </div>
+            <div class="notice">地区:</div>
+            <div class="sucaihuo">
+                <select name="area">
+                    <option value="" hidden>请选择</option>
+                    <option value="东校区"><a href="">东校区</a></option>
+                    <option value="西校区"><a href="">西校区</a></option>
+                    <option value="武汉校区"><a href="">武汉校区</a></option>
+
+                </select>
+            </div>
+            <div><button type="submit" class="find">查找</button></div>
+
+    </div>
+</form>
+
+
+    <div class="content">
+        <ul>
+            {% for item in items %}
+                <li>
+                    <div>
+
+                        <a href="{% url 'ITEM:detail' item.id %}"><img src="{{ MEDIA_URL }}{{ item.picture.pic1 }}"
+                                                                       alt=""
+                                                                       style="width:162px; height: 101.25px; "></a>
+                        <p style="margin-top: 20px;">类型：{{ item.item_type.name }}</p>
+                        <p>地区：{{ item.area }}</p>
+                        <p>日期：{{ item.time }}</p>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+
+
+    </div>
+
+    <div id="top">
+        <p><i class="iconfont">&#xe6e1;</i></p>
+        <p>顶部</p>
+    </div>
+
+
+</div>
+
+<script src="https://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+<script src="{% static 'javascript/jquery.combo.select.js' %}"></script>
+{#    <script src="{% static 'javascript/jquery.waterfall.js' %}"></script>#}
+{#<script>#}
+{#	$("#div1").waterfall({#}
+{#	    itemClass: ".box",#}
+{#	    minColCount: 2,#}
+{#	    spacingHeight: 10,#}
+{#	    resizeable: true,#}
+{#	    ajaxCallback: function(success, end) {#}
+{#	        var data = {"data": [#}
+{#	            { "src": "1.jpg" }, { "src": "19197.jpg" },{ "src": "1.jpg" }, { "src": "19197.jpg" },{ "src": "19197.jpg" }#}
+{#	        ]};#}
+{#	        var str = "";#}
+{#	        var templ = '<div class="box" style="opacity:0;filter:alpha(opacity=0);"><div class="pic"><img src="{{ MEDIA_URL }}1.jpg" /> <p class="word1">xxxxxx</p><p class="word2">xxxxxx</p></div></div>'#}
+{#            var templ = '<div class="box" style="opacity:0;filter:alpha(opacity=0);"><div class="pic"><img src="images/{{src}}" /> <p class="word1">xxxxxx</p><p class="word2">xxxxxx</p></div></div>'#}
+{#	        for(var i = 0; i < data.data.length; i++) {#}
+{#	            str += templ.replace("{{src}}", data.data[i].src);#}
+{#	        }#}
+{#	        $(str).appendTo($("#div1"));#}
+{#	        success();#}
+{#	        end();#}
+{#	    }#}
+{#	});#}
+{#	</script>#}
+<script>
+    $(function () {
+        $('select').comboSelect();
+    });
+</script>
+
+</body>
+</html>

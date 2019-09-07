@@ -1,0 +1,138 @@
+body{
+    width: 1366px;
+    height: 842px;
+    background:url(../images/contact.jpg) no-repeat center;
+}
+.topnav{
+    position: absolute;
+    top: 70px;
+    right: 170px;
+}
+
+.topnav ul li{
+    float: right;
+}
+.topnav ul li a{
+    font-size: 18px;
+    color: #5a7c97;
+    padding-left: 8px;
+}
+
+.touxiang{
+    position: absolute;
+    top: 64px;
+    left: 164px;
+}
+
+.touxiang img{
+    border-radius: 50%;
+}
+
+  .sidebar{
+      position: absolute;
+      top: 295px;
+      left: 150px;
+  }
+  .sidebar ul .item2,.item3,.item4{
+      display: block;
+      padding: 2px;
+      width: 250px;
+      height: 40px;
+      line-height: 40px;
+      background: #fff;
+      border: 1px solid #f3acae;
+      box-shadow: 0 0 3px #f3acae;
+      margin-left: -62px;
+      margin-top: 12px;
+  }
+
+  .sidebar .item1{
+      background: transparent;
+      margin-top: -30px;
+      margin-bottom: 36px;
+      margin-left: 10px;
+  }
+.sidebar ul li i{
+    font-size: 20px;
+    margin-left: 5px;
+    color: #808d9e;
+}
+
+.sidebar ul li a{
+    display: block;
+    color: #000;
+    color: #808d9e;
+}
+.sidebar ul li a:hover{
+    box-shadow: 0 0 20px #f3acae;
+}
+
+
+.sidebar ul li span{
+    margin-left: 5px;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+
+.main{
+    width: 900px;
+    /* height: 500px; */
+    /* background: #000; */
+    position: absolute;
+    top: 100px;
+    left: 760px;
+}
+
+.word{
+    margin-left: 50px;
+    width: 128px;
+font-size:32px;
+color: #808d9e;
+border-bottom: 5px solid #808d9e;
+}
+
+.main textarea{
+    width: 683px;
+    height: 325px;
+    outline: none;
+    margin-left: -256px;
+    margin-top: 61px;
+    padding: 10px;
+    border: 5px solid #ccc;
+    
+    border-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.main textarea:focus{
+    box-shadow: 0 0 40px #ccc;
+}
+
+.main input{
+    font-size: 28px;
+    width: 130px;
+    height: 61px;
+    background: #ccc;
+    outline: none;
+    margin-left: 190px;
+    margin-top: 65px;
+    border: 0;
+    
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.main input:focus{
+    box-shadow: 0 0 20px #ccc;
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+    .sidebar{
+        position: absolute;
+        top: 295px;
+        left: 40px;
+    }
+}

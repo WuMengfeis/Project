@@ -1,0 +1,222 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/release.css' %}">
+    <link rel="stylesheet" href="{% static 'iconfont/iconfont.css' %}">
+    <script src="{% static 'javascript/jquery-1.12.2.min.js' %}"></script>
+    <script src="{% static 'javascript/scollTop.js' %}"></script>
+</head>
+<body>
+<div class="container">
+{% if errmsg %}
+    <script>
+        alert('{{ errmsg }}')
+    </script>
+{% endif %}
+
+
+<div class="topnav">
+    <ul>
+        <li><a href="{% url 'ITEM:index' %}" target="_blank">首页</a></li>
+        <li><a href="{% url 'ITEM:release' %}" target="_blank">发布</a></li>
+        <li><a href="{% url 'USER:login' %}" target="_blank">登录</a></li>
+    </ul>
+</div>
+<div class="left">
+    <div class="touxiang">
+        {% if user.last_name %}
+            <i class="iconfont"><img src="{{ user.email }}" alt="" width="135px" height="135px" style="border-radius: 50%;margin-top: 30px;margin-left: -8px;"></i>
+        {% else %}
+            <i class="iconfont"><img src="{% static 'images/01.jpg' %}" alt="" width="135px" height="135px" style="border-radius: 50%;margin-top: 30px;margin-left: -8px;"></i>
+        {% endif %}
+
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li class="list-item1"><span>{{ user.first_name }}</span></li>
+            <li class="list-item2">
+                <a href="{% url 'USER:my_release' user.password %}" target="_blank">我发布的</a></li>
+
+        </ul>
+    </div>
+</div>
+
+<form action="/release/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="images">
+        {% if not item %}
+            <div class="img">
+                <a href="javascript:;" class="file">选择图片
+                    <input type="file" name="pic" id="file1"/></a>
+                <img src="{% static 'images/images.png' %}" id="img1" style="width: 120px;height: 90px;">
+            </div>
+            <div>
+                <a href="javascript:;" class="file">选择图片
+                    <input type="file" name="pic" id="file2"/></a>
+                <img src="{% static 'images/images.png' %}" id="img2" style="width: 120px;height: 90px;">
+            </div>
+            <div>
+                <a href="javascript:;" class="file">选择图片
+                    <input type="file" name="pic" id="file3"/></a>
+                <img src="{% static 'images/images.png' %}" id="img3" style="width: 120px;height: 90px;">
+            </div>
+        {% else %}
+
+            <div class="img">
+                <a href="javascript:;" class="file">选择图片
+                    <input type="file" name="pic" id="file1"/></a>
+                <img src="{{ MEDIA_URL }}{{ item.picture.pic1 }}" id="img3" style="width: 120px;height: 90px;">
+            </div>
+            <div>
+                <a href="javascript:;" class="file">选择图片
+                    <input type="file" name="pic" id="file2"/></a>
+                <img src="{{ MEDIA_URL }}{{ item.picture.pic2 }}" id="img3" style="width: 120px;height: 90px;">
+            </div>
+            <div>
+                <a href="javascript:;" class="file">选择图片
+                    <input type="file" name="pic" id="file3"/></a>
+                <img src="{{ MEDIA_URL }}{{ item.picture.pic3 }}" id="img3" style="width: 120px;height: 90px;">
+            </div>
+        {% endif %}
+
+    </div>
+    <div class="main">
+        <span class="top">
+            <label for="">QQ邮箱</label>
+            <input type="text" name="item_email" value="{{ item.item_email }}" required>
+        </span>
+        <span class="top">
+            <label for="">手机号码</label>
+            <input type="text" name="item_telephone" value="{{ item.item_telephone }}" required>
+        </span>
+        <div class="middle">
+            <span>
+                <label>失物/拾物</label>
+                <select id="" name="status">
+                    {% if item %}
+                        <option value="{{ item.status }}" hidden>{{ item.status }}</option>
+                    {% else %}
+                        <option value="" hidden>请选择地区</option>
+                    {% endif %}
+                    <option value="失物">失物</option>
+                   <option value="拾物">拾物</option>
+               </select>
+            </span>
+            <span>
+                <label>地区</label>
+                <select id="" name="area">
+                    {% if item %}
+                        <option value="{{ item.area }}" hidden>{{ item.area }}</option>
+                    {% else %}
+                        <option value="" hidden>请选择地区</option>
+                    {% endif %}
+                    <option value="西校区">西校区</option>
+                   <option value="东校区">东校区</option>
+                   <option value="武汉校区">武汉校区</option>
+               </select>
+            </span>
+            <span>
+                <label>类型</label>
+                <select id="" name="item_type">
+                    {% if item %}
+                        <option value="{{ item.item_type.name }}" hidden>{{ item.item_type.name }}</option>
+                    {% else %}
+                        <option value="" hidden>请选择地区</option>
+                    {% endif %}
+                    {% for item_type in item_types %}
+                        <option value="{{ item_type.name }}">{{ item_type.name }}</option>
+                    {% endfor %}
+               </select>
+            </span>
+        </div>
+
+        <div class="bottom">
+            <span>
+                <label for="" id="date">日期</label>
+                <input type="text" value="{{ item.time }}" name="time" required>
+            </span>
+            <span>
+                <label for="">地点</label>
+                <input type="text" value="{{ item.location }}" name="location" required>
+            </span>
+            <span>
+                <label for="">酬金</label>
+                <input type="text" value="{{ item.price }}" name="price">
+            </span>
+        </div>
+
+    </div>
+    <div class="description">
+        <textarea name="detail" id="" placeholder="详情描述(如颜色、样式等)">{{ item.detail }}</textarea>
+        <input type="hidden" name="user_id" value="{{ user.id }}">
+    </div>
+
+    <div class="release">
+        <input type="submit" value="发布">
+    </div>
+
+</form>
+
+<div id="top">
+    <p><i class="iconfont">&#xe6e1;</i></p>
+    <p>顶部</p>
+</div>
+</div>
+{##}
+{#<script>#}
+{#    Calendar.create({#}
+{#        classN: 'calendar-item',#}
+{#        callBack: function (bindElem, dateObj) {#}
+{#            bindElem.innerHTML = dateObj.year + '-' + dateObj.month + '-' + dateObj.date;#}
+{#        }#}
+{#    })#}
+{#</script>#}
+
+
+<script>
+    $("#file1").change(function () {
+        var objUrl = getObjectURL(this.files[0]);//获取图片信息
+        console.log("objUrl = " + objUrl);
+        if (objUrl) {
+            $("#img1").attr("src", objUrl);
+        }
+    });
+    $("#file2").change(function () {
+        var objUrl = getObjectURL(this.files[0]);//获取图片信息
+        console.log("objUrl = " + objUrl);
+        if (objUrl) {
+            $("#img2").attr("src", objUrl);
+        }
+    });
+    $("#file3").change(function () {
+        var objUrl = getObjectURL(this.files[0]);//获取图片信息
+        console.log("objUrl = " + objUrl);
+        if (objUrl) {
+            $("#img3").attr("src", objUrl);
+        }
+    });
+
+
+    function getObjectURL(file) {
+        var url = null;
+        if (window.createObjectURL != undefined) {
+            url = window.createObjectURL(file);
+        } else if (window.URL != undefined) { // mozilla(firefox)
+            url = window.URL.createObjectURL(file);
+        } else if (window.webkitURL != undefined) { // webkit or chrome
+            url = window.webkitURL.createObjectURL(file);
+        }
+        return url;
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+{% extends 'my_base.html' %}
+{% load staticfiles %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/revision.css' %}">
+{% endblock head%}
+{% block main %}
+    <div><span>修改信息</span></div>
+    <form action="" method="post" class="revision">
+        <p>
+            <label for="">修改昵称</label>
+            <input type="text" name="first_name" value="{{ first_name }}">
+        </p>
+        <p>
+            <label for="">原始密码</label>
+            <input type="password" name="password" value="{{ password }}">
+        </p>
+        <p>
+            <label for="">修改密码</label>
+            <input type="password" name="password1" value="{{ password1 }}">
+        </p>
+        <p>
+            <label for="">确认密码</label>
+            <input type="password" name="password2" value="{{ password2 }}" >
+            <input type="hidden" name="username" value="{{ user.username }}">
+        </p>
+        <p>
+            {{ errmsg }}
+            <input type="submit" class="submit">
+        </p>
+
+    </form>
+{% endblock main%}

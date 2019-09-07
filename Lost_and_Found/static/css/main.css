@@ -1,0 +1,326 @@
+/* css 代码 */
+html{
+    font-size: 62.5%;
+}
+/* 清除浮动 */
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/*页面整体*/
+.container{
+    width: 129.0rem;
+    margin: 0 auto;
+}
+
+div.search {
+    position: absolute;
+    top: 8rem;
+    height: 3em;;
+    padding-left: 4.5rem;
+}
+
+form {
+    width:22.4rem;
+}
+
+input,button {
+    border:none;
+    outline:none;
+
+}
+
+input {
+    width: 23.5rem;
+    height: 3.5rem;
+}
+
+
+.search input {
+    float: left;
+    border:.1rem solid #fec32c;
+    border-radius: 1.6rem;
+    background:#fff;
+    padding-left: 1.0rem;
+
+}
+
+.search button {
+    float: left;
+    background:#808d9e;
+    border-radius:0 1.6rem 1.6rem 0;
+    width:6.0rem;
+    height: 3.5rem;
+    margin-left: 18.7rem;
+    margin-top: -3.6rem;
+}
+
+
+/*页面主导航*/
+.globalbar{
+    
+    margin: 3.0rem auto;
+    height: 47.0rem;
+}
+.globalbar ul{
+    position: absolute;
+    left: 3rem;
+    top: 16rem;
+}
+.globalbar ul li{
+    border-radius: 3px;
+    box-shadow: 0 0 30px #b2b48f;
+    font-size: 3.6rem;
+    text-align: center;
+    font-family: Arial;
+    letter-spacing: .7rem;
+}
+
+.globalbar ul li:nth-child(1){
+    width: 15.2rem;
+    height: 6.1rem;
+    background: #fec32c;
+    line-height: 6.1rem;
+    margin-left: 12.0rem;
+   
+}
+.globalbar ul li:nth-child(2){
+    width: 18.0rem;
+    height: 6.3rem;
+    background: #b2b48f;
+    line-height: 6.3rem;
+    font-size: 2.6rem;
+    margin-left: 4.0rem;
+}
+.globalbar ul li:nth-child(3){
+    width: 20.5rem;
+    height: 5.6rem;
+    background: #808d9e;
+    line-height: 5.6rem;
+    margin-left: 15.0rem;
+}
+.globalbar ul li:nth-child(4){
+    width: 23.4rem;
+    height: 6.1rem;
+    background: #e3d1b9;
+    line-height: 6.1rem;
+    margin-left: 21.0rem;
+    font-size: 2.4rem;
+}
+
+.globalbar ul li a{
+    display: block;
+}
+
+/* .search button:before {
+    content:"搜索";
+    font-size:13rem;
+    color:#F9F0DA;
+
+} */
+
+/*侧边栏*/
+
+.sidebar{
+    position: absolute;
+    right: 5rem;
+}
+.sidebar ul{
+    width: 12.3rem;
+    height: 42.9rem;
+    margin-left: 1rem;
+    background: #808d9e;
+    text-align: center;
+    color: #e3d1b9;
+}
+.sidebar ul {
+    box-shadow: 0 0 50px #e3d1b9;
+}
+
+.sidebar ul a{
+    display: block;
+    color: #e3d1b9;
+}
+.sidebar ul li:nth-child(1){
+    height: 5.0rem;
+    font-size: 1.6rem;
+    line-height: 5.0rem;
+    border-bottom: .1rem solid #fff; 
+}
+.sidebar ul li:nth-child(2){
+    height: 5.0rem;
+    font-size: 1.6rem;
+    line-height: 5.0rem;
+    border-bottom: .1rem solid #fff; 
+}
+.sidebar .number{
+    height: 6.0rem;
+    font-size: 3.6rem;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    line-height: 6.0rem;
+    margin-top: 3rem;
+}
+
+.sidebar .f6{
+    margin-top: 9rem;
+}
+
+
+.subSearch{
+    width: 118.4rem;
+    margin: 30px auto;
+}
+.subSearch div{
+    float: left;
+    margin-left: 0.5rem;
+}
+.subSearch div span{
+    font-size: 2.4rem;
+    color: rgb(255, 106, 52);
+    margin-right: 2rem;
+    margin-left: 2rem
+}
+
+
+.subSearch input{
+    width: 18rem;
+    /* text-align: center; */
+}
+
+.subSearch .notice{
+    width: 7rem;
+    font-size: 2.2rem;
+    color: #808d9e;
+    margin-left: 3rem;
+}
+
+.content ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 130rem;
+    margin: 5rem auto;
+}
+
+.content ul li{
+    width: 16.2rem;
+    height: 23.5rem;
+    border: 0.1rem solid red;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #fec32c;
+    margin-left: 7.2rem;
+    margin-top: 3.0rem;
+    padding: 1rem;
+}
+
+.content p{
+    height: 30px;
+    text-align: left;
+}
+
+.find {
+    width: 60px;
+    height: 37px;
+    border-radius: 10px;
+    border: none;
+    color: #1E88C7;
+    margin-left: 60px;
+    line-height: 40px;
+    background: #fce6cf;
+    cursor: pointer;
+}
+/*页面底部*/
+
+.footer{
+    margin-top: 5.0rem;
+    text-align:center;
+    color:#808d9e;
+    cursor:pointer;
+}
+
+.footer .iconfont{
+    width: 10.0rem;
+    height: 10.0rem;
+    line-height: 10.0rem;
+    padding-left: 5.0rem;
+    font-size: 4.5rem;
+}
+
+
+#top{
+    width:6.0rem;
+    height: 6.0rem;
+    background:#333333;
+    position:fixed;
+    right:1.0rem;
+    bottom:1.0rem;
+    /* font-size:32rem; */
+    text-align:center;
+    color:#CCCCCC;
+    cursor:pointer;
+    transition:all .5s ease;
+    display:none;
+}
+#top p{
+    margin-top: .5rem;
+}
+
+#top:hover{
+    background:#f40;
+    color: aliceblue;
+    transition:all .5s ease;
+}
+
+
+
+
+
+/*.content {width: 129rem;height: auto; margin-top: 12rem; }*/
+        /*#div1 { margin: auto; position: absolute; left: 1.5rem;}*/
+        /*.box { float: left; padding: 1em; border: .1rem solid #ccc; background: #f7f7f7; box-shadow: 0 0 8px #ccc; }*/
+        /*.box:hover { box-shadow: 0 0 10px #999; }*/
+        /*.box img { width: 22rem; }*/
+        /*#div1 .box .word1{*/
+            /*margin-top: .5rem;*/
+            /*border-bottom: .1rem solid #ccc;*/
+            /*text-align: center;*/
+        /*}*/
+        /*#div1 .box .word2{*/
+            /*text-align: center;*/
+        /*}*/
+
+@media only screen and (max-width: 80em) {
+    html{
+        font-size: 50%;
+    }
+    .sidebar ul{
+        height: 35rem;
+        
+    }
+    .sidebar .f6{
+        margin-top: -.1rem;
+    }
+}
+
+@media only screen and (min-width: 48em) and (max-width: 80em) {
+    html{
+        font-size: 40%;
+        
+    }
+    .sidebar ul{
+        width: 10.3rem;
+    }
+    .globalbar ul{
+        top: 15rem;
+        left: -4rem;
+    }
+}
+
+@media only screen and (max-width: 48em) {
+    html{
+        font-size: 30%;
+    }
+    .sidebar ul{
+        width: 8.3rem;
+    }
+}

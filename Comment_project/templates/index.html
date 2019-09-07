@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}首页{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'css/index.css') }}">
+{% endblock %}
+
+{% block main %}
+    <ul class="comment-list-group">
+        {% for comment in comments %}
+            <li>
+                <div class="avater-group">
+                    <img src="{{ url_for('static',filename = 'images/wmf.jpg') }}" alt="" class="avater">
+                </div>
+                <div class="comment-group">
+                    <p class="comment-title"><a
+                            href="{{ url_for('detail',comment_id = comment.id) }}">{{ comment.title }}</a></p>
+                    <p class="comment-content">{{ comment.content }}</p>
+                    <div class="comment-info">
+                        <span class="comment-author">{{ comment.author.username }}</span>
+                        <span class="comment-time">{{ comment.create_time }}</span>
+                    </div>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

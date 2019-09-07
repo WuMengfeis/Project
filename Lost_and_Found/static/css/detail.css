@@ -1,0 +1,178 @@
+
+.container {
+    width: 1300px;
+    box-shadow: 0 0 100px #ccc;
+    margin-top: -20px;
+    margin-left: 110px;
+    text-align: center;
+}
+
+.nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+}
+
+.nav ul li {
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+
+}
+
+.nav ul li a {
+    color: #808d9e;
+    font-size: 20px;
+}
+
+.top-banner {
+    background-color: #555;
+}
+
+.introduction {
+    width: 200px;
+    height: 530px;
+    /* line-height: 500px; */
+    margin-left: 100px;
+    margin-top: 60px;
+    background: #fce6cf;
+}
+
+.introduction img {
+    border-radius: 50%;
+    /*border: 2px dot red;*/
+    border: 0;
+    margin-top: 100px;
+}
+
+.information p {
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.information .word4 button {
+    width: 120px;
+    height: 52px;
+    border: 0;
+    outline: none;
+    background: #afd1d0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #afd1d0;
+    margin-top: 30px;
+}
+
+.information .word4 button a {
+    color: #333333;
+}
+
+.information .word4 button a span {
+    display: none;
+    width: 160px;
+    height: 40px;
+    color: #000;
+    background: #afd1d0;
+    /* position: relative; */
+}
+
+.information .word4 button a:hover span {
+    display: block;
+    border-radius: 10px;
+    position: absolute;
+    /* top: 1px; */
+    margin-left: -20px;
+}
+
+.content {
+    width: 100%;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 30px;
+    /* background-color: #ccc; */
+}
+
+.content div {
+    width: 430px;
+    height: 100px;
+    float: left;
+    /* background: #000; */
+    font-size: 24px;
+    color: #808d9e;
+    text-align: left;
+    line-height: 100px;
+    letter-spacing: 4px;
+}
+
+.content div span {
+    font-size: 32px;
+}
+
+.content .det {
+    /* margin-left: 20px; */
+    letter-spacing: 6px;
+}
+
+.wrap {
+    position: absolute;
+    right: 400px;
+    top: 140px;
+}
+@media only screen and (min-width: 1250px) and (max-width: 1400px) {
+    .wrap {
+        position: absolute;
+        right: 300px;
+        top: 140px;
+    }
+}
+@media only screen and (min-width: 800px) and (max-width: 1250px) {
+    .wrap {
+        position: absolute;
+        right: 140px;
+        top: 140px;
+    }
+}
+.details {
+    margin: 50px auto;
+}
+
+.details textarea {
+    width: 880px;
+    height: 610px;
+    outline: none;
+    font-size: 22px;
+    border-radius: 20px;
+    padding: 25px;
+    border: 2px solid #afd1d0;
+
+}
+
+.details textarea:focus {
+    box-shadow: 0 0 25px #afd1d0;
+}
+
+#top {
+    width: 60px;
+    height: 60px;
+    background: #333333;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    color: #CCCCCC;
+    cursor: pointer;
+    transition: all .5s ease;
+    display: none;
+}
+
+#top p {
+    margin-top: 5px;
+}
+
+#top:hover {
+    background: #f40;
+    color: aliceblue;
+    transition: all .5s ease;
+}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <table>
+        <thead>
+            <tr>
+                <th>序号</th>
+                <th>书名</th>
+                <th>作者</th>
+                <th>价格</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for book in books %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ book.name }}</td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.price }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form action="{% url 'book_edit' %}" method="post">
+        <table>
+            <tbody>
+                <tr>
+                    <td>书名</td>
+                    <td><input type="text" name="name" value="{{ book.name }}"></td>
+                </tr>
+                <tr>
+                    <td>作者</td>
+                    <td><input type="text" name="author" value="{{ book.author }}"></td>
+                </tr>
+                <tr>
+                    <td>价格</td>
+                    <td><input type="text" name="price" value="{{ book.price }}"></td>
+                </tr>
+                <tr>
+                    <td><input type="hidden" name="book_id" value="{{ book.id }}"></td>
+                    <td><input type="submit" value="提交"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+{% endblock %}

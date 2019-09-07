@@ -1,0 +1,116 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'iconfont/iconfont.css' %}">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .wrap{
+        width: 400px;
+        height: 400px;
+        border: 1px solid #fca24c;
+        margin: 50px auto;
+        box-shadow: 0 0 10px #fca24c;
+        text-align: center;
+    }
+    .item1{
+        font-size: 24px;
+        color: #737373;
+        margin-top: 12px;
+    }
+    .hr{
+        width: 200px;
+        height: 4px;
+        background: #fa7a00;
+        margin: 2px auto;
+        margin-bottom: 15px;
+    }
+
+    .item2{
+        font-size: 20px;
+        margin-top: 5px;
+        color: #8a8888;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+    }
+    .item2 p
+    {
+        margin-top: 5px;
+    }
+    .item2 img{
+        border-radius: 50%;
+        margin-top: 3px;
+        box-shadow: 0 0 5px #fa7a00;
+    }
+    input{
+        width: 290px;
+        height: 38px;
+        outline: none;
+        margin-top: 20px;
+        background: #f0eceb;
+        border: 0;
+        padding-left: 25px;
+        color: #333;
+        border-radius: 2px;
+        margin-left: -20px;
+    }
+    input:focus{
+        border: 1px solid #fa7a00;
+        box-shadow: 0 0 5px #fa7a00;
+    }
+    label{
+        position: relative;
+        right: -5px;
+    }
+    button{
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        background: #fca24c;
+        outline: none;
+        border: 0;
+        border-radius: 30px;
+        margin-top: 50px;
+        letter-spacing: 5px;
+        box-shadow: 0 0 20px #ccc;
+    }
+
+    button span{
+        font-size: 20px;
+        color: #fff;
+    }
+
+</style>
+<body>
+    <div class="wrap">
+        <div class="item1">绑定用户</div>
+        <div class="hr"></div>
+        <div class="item2">
+            <p>Hi, <img src="{{ user_head }}" alt="" width="30" height="30"> ! 您已登录.</p>
+            <p>请绑定用户, 完成QQ登录</p>
+        </div>
+        <form action="{% url 'USER:bing' user_head %}" method="post">
+            {% csrf_token %}
+            <div>
+                <label for=""><i class="iconfont">&#xe611;</i></label>
+                <input type="text" value="" name="username" placeholder="请输入您注册的邮箱">
+            </div>
+            <div>
+                <label for=""><i class="iconfont">&#xe82b;</i></label>
+                <input type="text" value="" name="password" placeholder="请输入密码">
+            </div>
+            <div>
+                <button type="submit" value="提交"><span>确定</span></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

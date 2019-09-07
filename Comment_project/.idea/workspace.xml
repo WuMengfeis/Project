@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e798c311-b531-41eb-9fae-f0a2a189b116" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Comment_project$Comment_project.coverage" NAME="Comment_project Coverage Results" MODIFIED="1540798923354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Comment_project$Flask__Comment_project_py___2_.coverage" NAME="Flask (Comment_project.py) (2) Coverage Results" MODIFIED="1540798848725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Comment_project$Flask__Comment_project_py___1_.coverage" NAME="Flask (Comment_project.py) (1) Coverage Results" MODIFIED="1539762953297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Comment_project$Flask__Comment_project_py_.coverage" NAME="Flask (Comment_project.py) Coverage Results" MODIFIED="1539766650132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1093372872">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="16" />
+          <entry key="project.open.time.0" value="4" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.61" value="1" />
+          <entry key="project.open.time.70" value="1" />
+          <entry key="project.opened" value="16" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="14" />
+          <entry key="gif" value="2" />
+          <entry key="html" value="17" />
+          <entry key="jpg" value="8" />
+          <entry key="py" value="27" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="14" />
+          <entry key="HTML" value="17" />
+          <entry key="Image" value="10" />
+          <entry key="Python" value="27" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="947" />
+          <entry key="dummy" value="15" />
+          <entry key="html" value="3421" />
+          <entry key="py" value="3836" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="947" />
+          <entry key="HTML" value="3421" />
+          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="Python" value="3836" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.vcs.git.usages" />
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Comment_project.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#77#0" expanded="true" />
+                <marker date="1539766649972" expanded="true" signature="295:418" ph="..." />
+                <marker date="1539766649972" expanded="true" signature="1161:1163" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/user.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="7" column="56" lean-forward="true" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+                <marker date="1542629163494" expanded="true" signature="73:78" ph="..." />
+                <marker date="1542629163494" expanded="true" signature="366:371" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/regist.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exts.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>brand</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/exts.py" />
+        <option value="$PROJECT_DIR$/static/css/login.css" />
+        <option value="$PROJECT_DIR$/templates/regist.py" />
+        <option value="$PROJECT_DIR$/templates/regist.html" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/question.py" />
+        <option value="$PROJECT_DIR$/templates/question.html" />
+        <option value="$PROJECT_DIR$/static/css/login_regist.css" />
+        <option value="$PROJECT_DIR$/static/css/comment.css" />
+        <option value="$PROJECT_DIR$/templates/comment.html" />
+        <option value="$PROJECT_DIR$/decorators.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/css/index.css" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/static/css/detail.css" />
+        <option value="$PROJECT_DIR$/templates/detail.html" />
+        <option value="$PROJECT_DIR$/static/css/base.css" />
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/templates/user.py" />
+        <option value="$PROJECT_DIR$/templates/user.html" />
+        <option value="$PROJECT_DIR$/static/css/photos.css" />
+        <option value="$PROJECT_DIR$/templates/photos.html" />
+        <option value="$PROJECT_DIR$/Comment_project.py" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/models.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="917" />
+    <option name="y" value="31" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Comment_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Comment_project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Comment_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Comment_project" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Comment_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Comment_project" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MySources\pythonCode\Virtualenv\flask-env\FlaskCode\Comment_project\static\images" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Flask server.Comment_project">
+    <configuration name="base.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Comment_project/templates/base.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="Comment_project" type="Python.FlaskServer" factoryName="Flask server">
+      <option name="additionalOptions" value="" />
+      <option name="application" value="" />
+      <option name="flaskDebug" value="true" />
+      <module name="Comment_project" />
+      <option name="target" value="$PROJECT_DIR$/Comment_project.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="D:\MySources\pythonCode\Virtualenv\flask-env\FlaskCode\Comment_project\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Flask server.Comment_project" />
+      <item itemvalue="JavaScript Debug.base.html" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.base.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e798c311-b531-41eb-9fae-f0a2a189b116" name="Default Changelist" comment="" />
+      <created>1537054448147</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537054448147</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.07707775" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="4" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32991204" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.114369504" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="SciView" order="2" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/static/images/wmf.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/regist.py" />
+    <entry file="file://$PROJECT_DIR$/migrations/versions/bfc8187ff578_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-192" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/question.py" />
+    <entry file="file://$PROJECT_DIR$/templates/question.html" />
+    <entry file="file://$PROJECT_DIR$/static/css/login_regist.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/versions/0c223d321975_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-192" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/detail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" column="76" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user.py" />
+    <entry file="file://$PROJECT_DIR$/static/images/OnePiece.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/images/OnePiece2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/expression3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/expression2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/expression1.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Lib/site-packages/sqlalchemy/engine/default.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="508" selection-start-line="508" selection-end-line="508" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decorators.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/photos.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/photos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/comment.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/comment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="69" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/regist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="7" column="56" lean-forward="true" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1542629163494" expanded="true" signature="73:78" ph="..." />
+            <marker date="1542629163494" expanded="true" signature="366:371" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Comment_project.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#77#0" expanded="true" />
+            <marker date="1539766649972" expanded="true" signature="295:418" ph="..." />
+            <marker date="1539766649972" expanded="true" signature="1161:1163" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

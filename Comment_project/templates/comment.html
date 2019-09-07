@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}吐槽&评论{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'css/comment.css') }}">
+{% endblock %}
+
+{% block main %}
+    <form action="" method="post">
+    <h3 class="page-title">讨论会</h3>
+        <div class="form-container">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="请输入标题" name="title">
+            </div>
+            <div class="form-group">
+                <textarea name="content" class="form-control" rows="5" placeholder="请输入评论内容" ></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary">提交</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}

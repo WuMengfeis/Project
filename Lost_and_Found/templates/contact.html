@@ -1,0 +1,16 @@
+{% extends 'my_base.html' %}
+{% load staticfiles %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock head%}
+
+{% block main %}
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="word">联系我们</div>
+            <textarea name="content" id="" placeholder="欢迎给我们提出意见~&#13;&#10;如果你是来夸我们的,请按提交&#13;&#10;如果你是来骂我们的,请按ctrl+W"></textarea>
+            <div><input type="submit"></div>
+        </form>
+
+{% endblock main%}
+
