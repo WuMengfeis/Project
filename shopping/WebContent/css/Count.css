@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+img{
+	width:100px;
+	height:100px;
+
+}
+
+
+.topDiv{
+width:auto;
+height:40px;
+text-align:center;
+}
+
+#top_text{
+	float:left;
+	display:inline;
+}
+
+#top_name{
+display:inline;
+}
+
+#top_tel{
+float:right;
+display:inline;
+}
+
+.line{
+	color:black;
+	height:2px;
+	background:gray;
+}
+
+#tabDiv{
+	text-align:center;
+}

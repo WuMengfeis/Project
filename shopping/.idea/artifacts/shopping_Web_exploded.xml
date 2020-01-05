@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="shopping:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/shopping_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="shopping/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="shopping" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/WebContent/WEB-INF/lib/sqljdbc4.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebContent/WEB-INF/lib/mysql-connector-java-5.1.48-bin.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
